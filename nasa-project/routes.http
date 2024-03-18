@@ -1,0 +1,19 @@
+###
+GET http://localhost:8000/launches
+
+###
+GET http://localhost:8000/planets
+
+###
+POST http://localhost:8000/launches
+Content-Type: application/json
+
+{
+    "mission": "Teste",
+    "rocket": "Teste",
+    "target": "Kepler-186f",
+    "launchDate": "January 17, 2030"
+}
+
+###
+DELETE http://localhost:8000/launches/101
